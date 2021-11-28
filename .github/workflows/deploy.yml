@@ -29,6 +29,10 @@ jobs:
       run: |
         mvn install
         mvn package
+        mv ./target/real_time_twitter_sentiment_analytics_system-1.0-SNAPSHOT-jar-with-dependencies.jar ./real_time_twitter_sentiment_analytics_system-1.0-SNAPSHOT-jar-with-dependencies.jar
+        zip real_time_twitter_sentiment_analytics_system-1.0-SNAPSHOT-jar-with-dependencies.jar ./appspec.yml ./scripts spark.zip
+        mkdir cd_artifact
+        mv spark.zip ./cd_artifact/spark.zip
         ls
 
     - name: AWS CREDENTIALS
