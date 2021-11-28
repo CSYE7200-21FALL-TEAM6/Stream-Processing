@@ -2,7 +2,7 @@
 name: Build and Deploy spark
 
 env:
-  ARTIFACT_NAME: csye7200-spark.zip
+  ARTIFACT_NAME: spark.zip
   CODEDEPLOY_APPLICATION_NAME: csye7200-spark
   CODEDEPLOY_APPLICATION_DEPLOYMENT_GROUP_NAME: csye7200-spark-deployment
   AWS_REGION: us-east-1
