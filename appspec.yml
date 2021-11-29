@@ -2,7 +2,7 @@ version: 0.0
 os: linux
 files:
   - source: /
-    destination: /home/ubuntu/webapp-install
+    destination: /home/ubuntu/spark-install
 hooks:
   BeforeInstall:
     - location: scripts/rails-stop.sh
@@ -16,7 +16,3 @@ hooks:
     - location: scripts/rails-start.sh
       runas: root
       timeout: 60
-  ValidateService:
-    - location: scripts/validate_server.sh
-      timeout: 300
-      runas: root
