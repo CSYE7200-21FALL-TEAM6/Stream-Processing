@@ -31,7 +31,7 @@ jobs:
         mvn package
         mv ./target/real_time_twitter_sentiment_analytics_system-1.0-SNAPSHOT-jar-with-dependencies.jar ./real_time_twitter_sentiment_analytics_system-1.0-SNAPSHOT-jar-with-dependencies.jar
         mv ./src/main/resources/output ./
-        zip -r spark.zip real_time_twitter_sentiment_analytics_system-1.0-SNAPSHOT-jar-with-dependencies.jar ./appspec.yml ./scripts ./src/main/resources/output
+        zip -r spark.zip real_time_twitter_sentiment_analytics_system-1.0-SNAPSHOT-jar-with-dependencies.jar ./appspec.yml ./scripts ./output
         mkdir cd_artifact
         mv spark.zip ./cd_artifact/spark.zip
         ls
