@@ -1,6 +1,6 @@
 #! /bin/bash
 
-cd /home/ubuntu/spark || exit
+cd /home/ubuntu/spark-3.2.0-bin-hadoop3.2-scala2.13 || exit
 
 nohup /home/ubuntu/spark-3.2.0-bin-hadoop3.2-scala2.13/bin/spark-submit \
 --class edu.neu.csye7200.twitterproject.StreamProcessing \
