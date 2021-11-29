@@ -1,2 +1,2 @@
 #! /bin/bash
-killall spark || echo "No rails run"
+kill $(jps | grep -i "SparkSubmit" | tr -cd "[0-9]") || echo "no spark run"

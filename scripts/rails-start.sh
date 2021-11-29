@@ -2,7 +2,7 @@
 
 cd /home/ubuntu/spark || exit
 
-nohup ./bin/spark-submit \
+nohup /home/ubuntu/spark-3.2.0-bin-hadoop3.2-scala2.13/bin/spark-submit \
 --class edu.neu.csye7200.twitterproject.StreamProcessing \
 --master local \
-real_time_twitter_sentiment_analytics_system-1.0-SNAPSHOT-jar-with-dependencies.jar \ > ~/application.log 2>&1 &
+/home/ubuntu/sparkreal_time_twitter_sentiment_analytics_system-1.0-SNAPSHOT-jar-with-dependencies.jar  > ~/application.log 2>&1 &
