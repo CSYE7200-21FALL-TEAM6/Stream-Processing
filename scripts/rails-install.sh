@@ -5,4 +5,5 @@ cp -r /home/ubuntu/spark-install/real_time_twitter_sentiment_analytics_system-1.
 cd /home/ubuntu/spark-3.2.0-bin-hadoop3.2-scala2.13 || exit
 mkdir output
 cp -r /home/ubuntu/spark-install/output/ /home/ubuntu/spark-3.2.0-bin-hadoop3.2-scala2.13/
+cp -r /home/ubuntu/spark-install/output/ /home/ubuntu/
 cd /home/ubuntu/spark || exit
