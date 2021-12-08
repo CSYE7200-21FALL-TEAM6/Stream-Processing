@@ -68,13 +68,13 @@ object StreamProcessing {
                 val token = recordArray(1)
                 val tweet = recordArray(2)
                 val like_num = recordArray(3).toInt
-                val reply_num = recordArray(4).toInt
-                val retweet_num = recordArray(5).toInt
+//                val reply_num = recordArray(4).toInt
+                val retweet_num = recordArray(4).toInt
                 println(keyword)
                 println(token)
                 println(tweet)
                 println(like_num)
-                println(reply_num)
+//                println(reply_num)
                 println(retweet_num)
 //                val res1 = MLlibNaiveBayesPrediction.computeSentiment(record.value(), stopWordsList, naiveBayesModel)
 //                println(res1)
@@ -83,7 +83,7 @@ object StreamProcessing {
                 println("--------------------------------------------------")
                 // create SQL query and add it into batch
                 val sql = "INSERT INTO tweetsInfo(keyword,token,sentiment_res,like_num,reply_num,retweet_num) " +
-                          "values ("+"'"+keyword+"'"+","+"'"+token+"'"+","+sentiment_res+","+like_num+","+reply_num+","+retweet_num+");"
+                          "values ("+"'"+keyword+"'"+","+"'"+token+"'"+","+sentiment_res+","+like_num+","+retweet_num+");"
                 statement.addBatch(sql) // add into batch
               })
               statement.executeBatch() //execute query in batch
