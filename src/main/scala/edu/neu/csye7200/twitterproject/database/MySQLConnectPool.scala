@@ -11,7 +11,7 @@ class MySQLConnectPool extends Serializable{
   try {
     // setup MySQL params
 //    cpds.setJdbcUrl("jdbc:mysql://localhost:3306/twitter?useUnicode=true&characterEncoding=UTF-8")
-    cpds.setJdbcUrl(ConnectUtils.getParams("MYSQL_URL"))
+    cpds.setJdbcUrl("jdbc:mysql://"+ConnectUtils.getParams("MYSQL_URL")+":3306/webapp_mysql_development")
     cpds.setDriverClass("com.mysql.cj.jdbc.Driver")  //mysql-connector-java-8.0.16 driver
     cpds.setUser(ConnectUtils.getParams("MYSQL_USER"))
     cpds.setPassword(ConnectUtils.getParams("MYSQL_PW"))
