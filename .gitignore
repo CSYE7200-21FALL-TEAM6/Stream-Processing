@@ -66,3 +66,4 @@ jitwatch.out
 .bloop
 project/**/metals.sbt
 .csv
+.env

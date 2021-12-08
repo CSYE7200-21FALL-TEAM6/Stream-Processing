@@ -4,9 +4,7 @@ import org.apache.spark.SparkContext
 import org.apache.spark.sql.{SQLContext, SparkSession}
 
 
-/**
-  * Lazily instantiated singleton instance of SQLContext.
-  */
+// lazy SQL context singleton, initialize as needed
 object SQLContextSingleton {
 
   @transient
